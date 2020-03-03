@@ -22,6 +22,7 @@
 		D9645687240E5D8700F99C64 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645686240E5D8700F99C64 /* Skill.swift */; };
 		D9645689240E5DA100F99C64 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645688240E5DA100F99C64 /* Course.swift */; };
 		D964568B240E5DA800F99C64 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568A240E5DA800F99C64 /* Training.swift */; };
+		D964568D240E6A4700F99C64 /* CVAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568C240E6A4700F99C64 /* CVAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D9645686240E5D8700F99C64 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		D9645688240E5DA100F99C64 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		D964568A240E5DA800F99C64 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		D964568C240E6A4700F99C64 /* CVAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		D9645676240D965100F99C64 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D964568C240E6A4700F99C64 /* CVAPI.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9645689240E5DA100F99C64 /* Course.swift in Sources */,
+				D964568D240E6A4700F99C64 /* CVAPI.swift in Sources */,
 				D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */,
 				D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */,
 				D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */,
