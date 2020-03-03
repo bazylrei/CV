@@ -1,6 +1,9 @@
 import UIKit
 
 class CV: NSObject, Codable {
-    let firstName: String
-    let lastName: String
+    let person: Person
+    let workEntries: [WorkEntry]
+    let courses: [Course]
+    let training: [Training]
+    let skills: [Skill]
 }

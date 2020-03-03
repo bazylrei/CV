@@ -1,5 +1,6 @@
 import UIKit
 
-class Course: NSObject {
-
+class Course: NSObject, Codable {
+    let name: String
+    let shortDescription: String?
 }
