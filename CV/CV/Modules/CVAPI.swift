@@ -5,11 +5,13 @@ protocol CVAPIType {
     func fetchCV(with identifier: String)
 }
 
-class CVAPI: NSObject {
+class CVAPI: NSObject, CVAPIType {
+    let cvService: CVServiceType = CVService()
+    
     func fetchCVs() {
-        
+        cvService.getCVs()
     }
+    
     func fetchCV(with identifier: String) {
-        
     }
 }

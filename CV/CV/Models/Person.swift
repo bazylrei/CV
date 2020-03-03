@@ -6,5 +6,5 @@ class Person: NSObject, Codable {
     let lastName: String
     let nationality: String
     let dateOfBirth: Date
-    let availableFrom: Date?
+//    let availableFrom: Date?
 }

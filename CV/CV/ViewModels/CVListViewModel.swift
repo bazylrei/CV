@@ -5,7 +5,9 @@ protocol CVListViewModelType {
 }
 
 class CVListViewModel: CVListViewModelType {
+    let api: CVAPIType = CVAPI()
+    
     func fetchCVList() {
-        
+        api.fetchCVs()
     }
 }

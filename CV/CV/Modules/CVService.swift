@@ -4,7 +4,7 @@ protocol CVServiceType {
     func getCVs()
 }
 
-class CVService: NSObject {
+class CVService: NSObject, CVServiceType {
     func getCVs() {
         guard let url = URL(string: "\(URLs.base)\(URLs.CVList)") else {
             return
@@ -16,8 +16,12 @@ class CVService: NSObject {
             }
             if let data = data {
                 do {
+                    let formatter = DateFormatter()
+                    formatter.locale = Locale(identifier: "en_US_POSIX")
+                    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
                     let jsonDecoder = JSONDecoder()
-                    let list = try jsonDecoder.decode([CV].self, from: data)
+                    jsonDecoder.dateDecodingStrategy = .formatted(formatter)
+                    let list = try jsonDecoder.decode(CVListResponse.self, from: data)
                     print(list)
                 } catch {
                     print(error.localizedDescription)
