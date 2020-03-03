@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class WorkEntry: NSObject, Codable {
     let companyName: String

@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class Person: NSObject, Codable {
     let firstName: String

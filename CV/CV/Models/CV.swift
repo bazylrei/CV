@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class CV: NSObject, Codable {
     let person: Person

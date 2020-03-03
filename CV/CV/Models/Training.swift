@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class Training: NSObject, Codable {
     let name: String
