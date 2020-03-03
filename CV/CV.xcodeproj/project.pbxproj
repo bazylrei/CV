@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645645240D535B00F99C64 /* AppDelegate.swift */; };
-		D9645648240D535B00F99C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645647240D535B00F99C64 /* SceneDelegate.swift */; };
 		D964564D240D535B00F99C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D964564B240D535B00F99C64 /* Main.storyboard */; };
 		D964564F240D535C00F99C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D964564E240D535C00F99C64 /* Assets.xcassets */; };
 		D9645652240D535C00F99C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9645650240D535C00F99C64 /* LaunchScreen.storyboard */; };
@@ -55,7 +54,6 @@
 /* Begin PBXFileReference section */
 		D9645642240D535B00F99C64 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9645645240D535B00F99C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9645647240D535B00F99C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D964564C240D535B00F99C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D964564E240D535C00F99C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9645651240D535C00F99C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				D9645653240D535C00F99C64 /* Info.plist */,
 				D9645650240D535C00F99C64 /* LaunchScreen.storyboard */,
 				D9645645240D535B00F99C64 /* AppDelegate.swift */,
-				D9645647240D535B00F99C64 /* SceneDelegate.swift */,
 				D9645690240E6DB100F99C64 /* URLs.swift */,
 				D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */,
 				D9645698240E839400F99C64 /* LocalCVList.json */,
@@ -383,7 +380,6 @@
 				D9645683240E5D5600F99C64 /* WorkEntry.swift in Sources */,
 				D9645685240E5D6F00F99C64 /* Person.swift in Sources */,
 				D9645681240E5D0C00F99C64 /* CV.swift in Sources */,
-				D9645648240D535B00F99C64 /* SceneDelegate.swift in Sources */,
 				D96456A0240E9BE400F99C64 /* CVDetailsViewModel.swift in Sources */,
 				D9645693240E732900F99C64 /* CVListResponse.swift in Sources */,
 				D9645687240E5D8700F99C64 /* Skill.swift in Sources */,
