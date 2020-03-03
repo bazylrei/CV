@@ -1,5 +1,19 @@
 import UIKit
 
+enum Screen {
+    case cvList
+    case cvDetail(CV)
+    
+    var identifier: String {
+        switch self {
+        case .cvList:
+            return String(describing: CVListViewController.self)
+        case .cvDetail(_):
+            return String(describing: CVDetailsViewController.self)
+        }
+    }
+}
+
 protocol AppRouterType {
     func presentCVDetails(with cv: CV)
     func pop()
@@ -8,7 +22,11 @@ protocol AppRouterType {
 class AppRouter: AppRouterType {
     func presentCVDetails(with cv: CV) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "CVDetailsViewController")
+        guard let vc = storyboard.instantiateViewController(identifier: Screen.cvDetail(cv).identifier) as? CVDetailsViewController else {
+            return
+        }
+        let viewModel = CVDetailsViewModel(cv: cv)
+        vc.viewModel = viewModel
         navController?.pushViewController(vc, animated: true)
     }
     
