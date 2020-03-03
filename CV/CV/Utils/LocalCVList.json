@@ -38,8 +38,19 @@
           "name": "soft skills academy",
           "shortDescription": "Quick course teaching the essentials of soft skills used in a news presenting company"
         },
-          {"name": "public speaking",
-          "shortDescription": "In depth course teaching the basics of presening and communicating ideas in coherent manor"}]
+          {
+            "name": "public speaking",
+            "shortDescription": "In depth course teaching the basics of presening and communicating ideas in coherent manor"
+          }
+        ],
+      "trainings":
+        [{
+          "name": "Swift basics",
+          "location": "Cupertino, California",
+          "date": "2016-08-29T04:00:00.000Z",
+          "shortDescription": "Decided to try out my skills in software development by attending a Swift course in Cupertino, think I'll stick to presenting"
+          }
+        ]
         
     }
   ]
