@@ -29,6 +29,7 @@
 		D9645695240E75EB00F99C64 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */; };
 		D9645697240E836600F99C64 /* CVLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645696240E836600F99C64 /* CVLocalService.swift */; };
 		D9645699240E839400F99C64 /* LocalCVList.json in Resources */ = {isa = PBXBuildFile; fileRef = D9645698240E839400F99C64 /* LocalCVList.json */; };
+		D964569C240E975A00F99C64 /* CVListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964569B240E975A00F99C64 /* CVListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		D9645696240E836600F99C64 /* CVLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVLocalService.swift; sourceTree = "<group>"; };
 		D9645698240E839400F99C64 /* LocalCVList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocalCVList.json; sourceTree = "<group>"; };
+		D964569B240E975A00F99C64 /* CVListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		D9645675240D964400F99C64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D964569A240E973F00F99C64 /* Cells */,
 				D964564B240D535B00F99C64 /* Main.storyboard */,
 				D964567B240D9D0900F99C64 /* CVListViewController.swift */,
 			);
@@ -216,6 +219,14 @@
 				D9645692240E732900F99C64 /* CVListResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D964569A240E973F00F99C64 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D964569B240E975A00F99C64 /* CVListCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +377,7 @@
 				D9645687240E5D8700F99C64 /* Skill.swift in Sources */,
 				D964568B240E5DA800F99C64 /* Training.swift in Sources */,
 				D9645695240E75EB00F99C64 /* DateFormatter+Extensions.swift in Sources */,
+				D964569C240E975A00F99C64 /* CVListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
