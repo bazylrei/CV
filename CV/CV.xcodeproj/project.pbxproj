@@ -24,6 +24,7 @@
 		D964568B240E5DA800F99C64 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568A240E5DA800F99C64 /* Training.swift */; };
 		D964568D240E6A4700F99C64 /* CVAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568C240E6A4700F99C64 /* CVAPI.swift */; };
 		D964568F240E6ADD00F99C64 /* CVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568E240E6ADD00F99C64 /* CVService.swift */; };
+		D9645691240E6DB100F99C64 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645690240E6DB100F99C64 /* URLs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D964568A240E5DA800F99C64 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		D964568C240E6A4700F99C64 /* CVAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAPI.swift; sourceTree = "<group>"; };
 		D964568E240E6ADD00F99C64 /* CVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVService.swift; sourceTree = "<group>"; };
+		D9645690240E6DB100F99C64 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				D9645650240D535C00F99C64 /* LaunchScreen.storyboard */,
 				D9645645240D535B00F99C64 /* AppDelegate.swift */,
 				D9645647240D535B00F99C64 /* SceneDelegate.swift */,
+				D9645690240E6DB100F99C64 /* URLs.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9645689240E5DA100F99C64 /* Course.swift in Sources */,
+				D9645691240E6DB100F99C64 /* URLs.swift in Sources */,
 				D964568D240E6A4700F99C64 /* CVAPI.swift in Sources */,
 				D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */,
 				D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */,
