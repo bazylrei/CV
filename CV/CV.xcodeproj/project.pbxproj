@@ -23,10 +23,12 @@
 		D9645689240E5DA100F99C64 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645688240E5DA100F99C64 /* Course.swift */; };
 		D964568B240E5DA800F99C64 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568A240E5DA800F99C64 /* Training.swift */; };
 		D964568D240E6A4700F99C64 /* CVAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568C240E6A4700F99C64 /* CVAPI.swift */; };
-		D964568F240E6ADD00F99C64 /* CVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568E240E6ADD00F99C64 /* CVService.swift */; };
+		D964568F240E6ADD00F99C64 /* CVGistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568E240E6ADD00F99C64 /* CVGistService.swift */; };
 		D9645691240E6DB100F99C64 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645690240E6DB100F99C64 /* URLs.swift */; };
 		D9645693240E732900F99C64 /* CVListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645692240E732900F99C64 /* CVListResponse.swift */; };
 		D9645695240E75EB00F99C64 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */; };
+		D9645697240E836600F99C64 /* CVLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645696240E836600F99C64 /* CVLocalService.swift */; };
+		D9645699240E839400F99C64 /* LocalCVList.json in Resources */ = {isa = PBXBuildFile; fileRef = D9645698240E839400F99C64 /* LocalCVList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +71,12 @@
 		D9645688240E5DA100F99C64 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		D964568A240E5DA800F99C64 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		D964568C240E6A4700F99C64 /* CVAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAPI.swift; sourceTree = "<group>"; };
-		D964568E240E6ADD00F99C64 /* CVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVService.swift; sourceTree = "<group>"; };
+		D964568E240E6ADD00F99C64 /* CVGistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVGistService.swift; sourceTree = "<group>"; };
 		D9645690240E6DB100F99C64 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		D9645692240E732900F99C64 /* CVListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListResponse.swift; sourceTree = "<group>"; };
 		D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		D9645696240E836600F99C64 /* CVLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVLocalService.swift; sourceTree = "<group>"; };
+		D9645698240E839400F99C64 /* LocalCVList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocalCVList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				D964568C240E6A4700F99C64 /* CVAPI.swift */,
-				D964568E240E6ADD00F99C64 /* CVService.swift */,
+				D964568E240E6ADD00F99C64 /* CVGistService.swift */,
+				D9645696240E836600F99C64 /* CVLocalService.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				D9645647240D535B00F99C64 /* SceneDelegate.swift */,
 				D9645690240E6DB100F99C64 /* URLs.swift */,
 				D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */,
+				D9645698240E839400F99C64 /* LocalCVList.json */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9645699240E839400F99C64 /* LocalCVList.json in Resources */,
 				D9645652240D535C00F99C64 /* LaunchScreen.storyboard in Resources */,
 				D964564F240D535C00F99C64 /* Assets.xcassets in Resources */,
 				D964564D240D535B00F99C64 /* Main.storyboard in Resources */,
@@ -347,8 +354,9 @@
 				D9645691240E6DB100F99C64 /* URLs.swift in Sources */,
 				D964568D240E6A4700F99C64 /* CVAPI.swift in Sources */,
 				D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */,
+				D9645697240E836600F99C64 /* CVLocalService.swift in Sources */,
 				D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */,
-				D964568F240E6ADD00F99C64 /* CVService.swift in Sources */,
+				D964568F240E6ADD00F99C64 /* CVGistService.swift in Sources */,
 				D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */,
 				D9645683240E5D5600F99C64 /* WorkEntry.swift in Sources */,
 				D9645685240E5D6F00F99C64 /* Person.swift in Sources */,

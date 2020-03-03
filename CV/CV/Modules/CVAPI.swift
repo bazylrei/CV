@@ -6,7 +6,7 @@ protocol CVAPIType {
 }
 
 class CVAPI: NSObject, CVAPIType {
-    let cvService: CVServiceType = CVService()
+    let cvService: CVServiceType = CVLocalService()
     
     func fetchCVs() {
         cvService.getCVs()

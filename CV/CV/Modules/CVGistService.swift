@@ -4,7 +4,7 @@ protocol CVServiceType {
     func getCVs()
 }
 
-class CVService: NSObject, CVServiceType {
+class CVGistService: NSObject, CVServiceType {
     func getCVs() {
         guard let url = URL(string: "\(URLs.base)\(URLs.CVList)") else {
             return
