@@ -2,6 +2,64 @@
   "data": [
     {
       "person": {
+        "firstName": "Mitch",
+        "middleName": "",
+        "lastName": "Smith",
+        "nationality": "British",
+        "dateOfBirth": "1980-01-12T04:00:00.000Z",
+        "availableFrom": "2020-04-01T04:00:00.000Z"
+      },
+      "workEntries":
+        [{
+          "companyName": "ITV",
+          "position": "intern",
+          "responsibilities": [
+            "preparing coffee",
+            "admin tasks"
+          ],
+          "shortDescription": "John Smith was in charge of preparing low level tasks for the team at ITV",
+          "startDate": "2007-08-29T04:00:00.000Z",
+          "endDate": "2009-08-29T04:00:00.000Z"
+        },
+          {
+          "companyName": "BBC",
+          "position": "presenter",
+          "responsibilities": [
+            "preparing material",
+            "presenting",
+            "conducting celebrity interviews"
+          ],
+          "shortDescription": "John Smith was in charge of anchoring the morning show at BBC",
+          "startDate": "2009-08-29T04:00:00.000Z",
+          "endDate": "2019-08-29T04:00:00.000Z"
+        }],
+      "courses":
+        [{
+          "name": "soft skills academy",
+          "shortDescription": "Quick course teaching the essentials of soft skills used in a news presenting company"
+        },
+          {
+            "name": "public speaking",
+            "shortDescription": "In depth course teaching the basics of presening and communicating ideas in coherent manor"
+          }
+        ],
+      "trainings":
+        [{
+          "name": "Swift basics",
+          "location": "Cupertino, California",
+          "date": "2016-08-29T04:00:00.000Z",
+          "shortDescription": "Decided to try out my skills in software development by attending a Swift course in Cupertino, think I'll stick to presenting"
+          }
+        ],
+      "skills":
+      [{
+        "name": "delegating responsibilities",
+        "level": "basic"
+      }
+      ]
+    },
+    {
+      "person": {
         "firstName": "John",
         "middleName": "",
         "lastName": "Smith",

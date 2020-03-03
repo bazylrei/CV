@@ -4,10 +4,13 @@ protocol CVListViewModelType {
     func fetchCVList(completion: @escaping (() -> Void))
     var numberOfRows: Int { get }
     func cv(at index: Int) -> CV
+    func presentDetails(for cv: CV)
 }
 
 class CVListViewModel: CVListViewModelType {
+    
     private let api: CVAPIType = CVAPI()
+    private let appRouter: AppRouterType = AppRouter()
     private var cvList = [CV]()
     
     func fetchCVList(completion: @escaping (() -> Void)) {
@@ -23,5 +26,9 @@ class CVListViewModel: CVListViewModelType {
     
     func cv(at index: Int) -> CV {
         return cvList[index]
+    }
+    
+    func presentDetails(for cv: CV) {
+        appRouter.presentCVDetails(with: cv)
     }
 }

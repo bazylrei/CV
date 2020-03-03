@@ -30,6 +30,9 @@
 		D9645697240E836600F99C64 /* CVLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645696240E836600F99C64 /* CVLocalService.swift */; };
 		D9645699240E839400F99C64 /* LocalCVList.json in Resources */ = {isa = PBXBuildFile; fileRef = D9645698240E839400F99C64 /* LocalCVList.json */; };
 		D964569C240E975A00F99C64 /* CVListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964569B240E975A00F99C64 /* CVListCell.swift */; };
+		D964569E240E9BCE00F99C64 /* CVDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964569D240E9BCE00F99C64 /* CVDetailsViewController.swift */; };
+		D96456A0240E9BE400F99C64 /* CVDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964569F240E9BE400F99C64 /* CVDetailsViewModel.swift */; };
+		D96456A2240E9C9600F99C64 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A1240E9C9600F99C64 /* AppRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		D9645696240E836600F99C64 /* CVLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVLocalService.swift; sourceTree = "<group>"; };
 		D9645698240E839400F99C64 /* LocalCVList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocalCVList.json; sourceTree = "<group>"; };
 		D964569B240E975A00F99C64 /* CVListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListCell.swift; sourceTree = "<group>"; };
+		D964569D240E9BCE00F99C64 /* CVDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDetailsViewController.swift; sourceTree = "<group>"; };
+		D964569F240E9BE400F99C64 /* CVDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDetailsViewModel.swift; sourceTree = "<group>"; };
+		D96456A1240E9C9600F99C64 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 				D964569A240E973F00F99C64 /* Cells */,
 				D964564B240D535B00F99C64 /* Main.storyboard */,
 				D964567B240D9D0900F99C64 /* CVListViewController.swift */,
+				D964569D240E9BCE00F99C64 /* CVDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 				D964568C240E6A4700F99C64 /* CVAPI.swift */,
 				D964568E240E6ADD00F99C64 /* CVGistService.swift */,
 				D9645696240E836600F99C64 /* CVLocalService.swift */,
+				D96456A1240E9C9600F99C64 /* AppRouter.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -181,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				D964567D240D9D6900F99C64 /* CVListViewModel.swift */,
+				D964569F240E9BE400F99C64 /* CVDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -363,16 +372,19 @@
 			files = (
 				D9645689240E5DA100F99C64 /* Course.swift in Sources */,
 				D9645691240E6DB100F99C64 /* URLs.swift in Sources */,
+				D964569E240E9BCE00F99C64 /* CVDetailsViewController.swift in Sources */,
 				D964568D240E6A4700F99C64 /* CVAPI.swift in Sources */,
 				D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */,
 				D9645697240E836600F99C64 /* CVLocalService.swift in Sources */,
 				D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */,
 				D964568F240E6ADD00F99C64 /* CVGistService.swift in Sources */,
+				D96456A2240E9C9600F99C64 /* AppRouter.swift in Sources */,
 				D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */,
 				D9645683240E5D5600F99C64 /* WorkEntry.swift in Sources */,
 				D9645685240E5D6F00F99C64 /* Person.swift in Sources */,
 				D9645681240E5D0C00F99C64 /* CV.swift in Sources */,
 				D9645648240D535B00F99C64 /* SceneDelegate.swift in Sources */,
+				D96456A0240E9BE400F99C64 /* CVDetailsViewModel.swift in Sources */,
 				D9645693240E732900F99C64 /* CVListResponse.swift in Sources */,
 				D9645687240E5D8700F99C64 /* Skill.swift in Sources */,
 				D964568B240E5DA800F99C64 /* Training.swift in Sources */,

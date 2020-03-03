@@ -20,7 +20,11 @@ class CVListViewController: UIViewController {
 }
 
 extension CVListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let cv = viewModel.cv(at: indexPath.row)
+        viewModel.presentDetails(for: cv)
+    }
 }
 
 extension CVListViewController: UITableViewDataSource {
@@ -33,8 +37,5 @@ extension CVListViewController: UITableViewDataSource {
         let cv = viewModel.cv(at: indexPath.row)
         cell.textLabel?.text = cv.person.firstName
         return cell
-        
     }
-    
-    
 }
