@@ -16,6 +16,12 @@
 		D9645668240D535C00F99C64 /* CVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645667240D535C00F99C64 /* CVUITests.swift */; };
 		D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964567B240D9D0900F99C64 /* CVListViewController.swift */; };
 		D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964567D240D9D6900F99C64 /* CVListViewModel.swift */; };
+		D9645681240E5D0C00F99C64 /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645680240E5D0C00F99C64 /* CV.swift */; };
+		D9645683240E5D5600F99C64 /* WorkEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645682240E5D5600F99C64 /* WorkEntry.swift */; };
+		D9645685240E5D6F00F99C64 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645684240E5D6F00F99C64 /* Person.swift */; };
+		D9645687240E5D8700F99C64 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645686240E5D8700F99C64 /* Skill.swift */; };
+		D9645689240E5DA100F99C64 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645688240E5DA100F99C64 /* Course.swift */; };
+		D964568B240E5DA800F99C64 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964568A240E5DA800F99C64 /* Training.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		D9645669240D535C00F99C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D964567B240D9D0900F99C64 /* CVListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewController.swift; sourceTree = "<group>"; };
 		D964567D240D9D6900F99C64 /* CVListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewModel.swift; sourceTree = "<group>"; };
+		D9645680240E5D0C00F99C64 /* CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
+		D9645682240E5D5600F99C64 /* WorkEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkEntry.swift; sourceTree = "<group>"; };
+		D9645684240E5D6F00F99C64 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D9645686240E5D8700F99C64 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		D9645688240E5DA100F99C64 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		D964568A240E5DA800F99C64 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				D9645676240D965100F99C64 /* Modules */,
-				D9645679240D969300F99C64 /* Utils */,
+				D964567F240E5CF000F99C64 /* Models */,
 				D9645677240D965700F99C64 /* ViewModels */,
 				D9645675240D964400F99C64 /* Views */,
+				D9645679240D969300F99C64 /* Utils */,
 				D964567A240D96B400F99C64 /* Assets */,
 			);
 			path = CV;
@@ -169,6 +182,19 @@
 				D964564E240D535C00F99C64 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		D964567F240E5CF000F99C64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9645680240E5D0C00F99C64 /* CV.swift */,
+				D9645682240E5D5600F99C64 /* WorkEntry.swift */,
+				D9645684240E5D6F00F99C64 /* Person.swift */,
+				D9645686240E5D8700F99C64 /* Skill.swift */,
+				D9645688240E5DA100F99C64 /* Course.swift */,
+				D964568A240E5DA800F99C64 /* Training.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,10 +328,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9645689240E5DA100F99C64 /* Course.swift in Sources */,
 				D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */,
 				D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */,
 				D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */,
+				D9645683240E5D5600F99C64 /* WorkEntry.swift in Sources */,
+				D9645685240E5D6F00F99C64 /* Person.swift in Sources */,
+				D9645681240E5D0C00F99C64 /* CV.swift in Sources */,
 				D9645648240D535B00F99C64 /* SceneDelegate.swift in Sources */,
+				D9645687240E5D8700F99C64 /* Skill.swift in Sources */,
+				D964568B240E5DA800F99C64 /* Training.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
