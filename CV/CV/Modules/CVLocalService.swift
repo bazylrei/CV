@@ -1,7 +1,7 @@
 import UIKit
 
 class CVLocalService: NSObject, CVServiceType {
-    func getCVs() {
+    func getCVs(completion: @escaping (([CV]) -> Swift.Void)) {
         if let path = Bundle.main.path(forResource: "LocalCVList", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
@@ -10,8 +10,8 @@ class CVLocalService: NSObject, CVServiceType {
                 formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
                 let jsonDecoder = JSONDecoder()
                 jsonDecoder.dateDecodingStrategy = .formatted(formatter)
-                let list = try jsonDecoder.decode(CVListResponse.self, from: data)
-                print(list)
+                let cvResponse = try jsonDecoder.decode(CVListResponse.self, from: data)
+                completion(cvResponse.data)
             } catch {
                 print(error.localizedDescription)
             }

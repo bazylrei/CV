@@ -1,11 +1,11 @@
 import Foundation
 
 protocol CVServiceType {
-    func getCVs()
+    func getCVs(completion: @escaping (([CV]) -> Swift.Void))
 }
 
 class CVGistService: NSObject, CVServiceType {
-    func getCVs() {
+    func getCVs(completion: @escaping ([CV]) -> Swift.Void) {
         guard let url = URL(string: "\(URLs.base)\(URLs.CVList)") else {
             return
         }
@@ -21,8 +21,9 @@ class CVGistService: NSObject, CVServiceType {
                     formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
                     let jsonDecoder = JSONDecoder()
                     jsonDecoder.dateDecodingStrategy = .formatted(formatter)
-                    let list = try jsonDecoder.decode(CVListResponse.self, from: data)
-                    print(list)
+                    let cvResponse = try jsonDecoder.decode(CVListResponse.self,
+                                                            from: data)
+                    completion(cvResponse.data)
                 } catch {
                     print(error.localizedDescription)
                 }

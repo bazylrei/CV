@@ -50,8 +50,13 @@
           "date": "2016-08-29T04:00:00.000Z",
           "shortDescription": "Decided to try out my skills in software development by attending a Swift course in Cupertino, think I'll stick to presenting"
           }
-        ]
-        
+        ],
+      "skills":
+      [{
+        "name": "delegating responsibilities",
+        "level": "basic"
+      }
+      ]
     }
   ]
 }
