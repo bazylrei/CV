@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645645240D535B00F99C64 /* AppDelegate.swift */; };
 		D9645648240D535B00F99C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645647240D535B00F99C64 /* SceneDelegate.swift */; };
-		D964564A240D535B00F99C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645649240D535B00F99C64 /* ViewController.swift */; };
 		D964564D240D535B00F99C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D964564B240D535B00F99C64 /* Main.storyboard */; };
 		D964564F240D535C00F99C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D964564E240D535C00F99C64 /* Assets.xcassets */; };
 		D9645652240D535C00F99C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9645650240D535C00F99C64 /* LaunchScreen.storyboard */; };
 		D964565D240D535C00F99C64 /* CVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964565C240D535C00F99C64 /* CVTests.swift */; };
 		D9645668240D535C00F99C64 /* CVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645667240D535C00F99C64 /* CVUITests.swift */; };
+		D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964567B240D9D0900F99C64 /* CVListViewController.swift */; };
+		D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964567D240D9D6900F99C64 /* CVListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		D9645642240D535B00F99C64 /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9645645240D535B00F99C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9645647240D535B00F99C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9645649240D535B00F99C64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D964564C240D535B00F99C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D964564E240D535C00F99C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9645651240D535C00F99C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		D9645663240D535C00F99C64 /* CVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9645667240D535C00F99C64 /* CVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVUITests.swift; sourceTree = "<group>"; };
 		D9645669240D535C00F99C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D964567B240D9D0900F99C64 /* CVListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewController.swift; sourceTree = "<group>"; };
+		D964567D240D9D6900F99C64 /* CVListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +131,8 @@
 		D9645675240D964400F99C64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D9645649240D535B00F99C64 /* ViewController.swift */,
 				D964564B240D535B00F99C64 /* Main.storyboard */,
+				D964567B240D9D0900F99C64 /* CVListViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +147,7 @@
 		D9645677240D965700F99C64 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D964567D240D9D6900F99C64 /* CVListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -299,8 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D964564A240D535B00F99C64 /* ViewController.swift in Sources */,
 				D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */,
+				D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */,
+				D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */,
 				D9645648240D535B00F99C64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

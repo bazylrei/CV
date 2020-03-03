@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CVListViewController.swift
 //  CV
 //
 //  Created by Bazyl Reinstein on 2/3/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CVListViewController: UIViewController {
 
+    let viewModel: CVListViewModelType = CVListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel.fetchCVList()
     }
 
-
 }
-
