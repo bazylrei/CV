@@ -32,7 +32,15 @@
           "shortDescription": "John Smith was in charge of anchoring the morning show at BBC",
           "startDate": "2009-08-29T04:00:00.000Z",
           "endDate": "2019-08-29T04:00:00.000Z"
-        }]
+        }],
+      "courses":
+        [{
+          "name": "soft skills academy",
+          "shortDescription": "Quick course teaching the essentials of soft skills used in a news presenting company"
+        },
+          {"name": "public speaking",
+          "shortDescription": "In depth course teaching the basics of presening and communicating ideas in coherent manor"}]
+        
     }
   ]
 }
