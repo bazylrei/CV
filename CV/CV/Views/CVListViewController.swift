@@ -14,7 +14,9 @@ class CVListViewController: UIViewController {
             guard let self = self else {
                 return
             }
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
 }

@@ -5,9 +5,13 @@ protocol CVAPIType {
 }
 
 class CVAPI: NSObject, CVAPIType {
-    private let cvService: CVServiceType = CVLocalService()
+    private let cvService: CVServiceType
     
-    func fetchCVs(completion: @escaping (([CV]) -> Swift.Void)) {
+    init(service: CVServiceType = CVGistService()) {
+        self.cvService = service
+    }
+    
+    func fetchCVs(completion: @escaping (([CV]) -> Void)) {
         cvService.getCVs { CVs in
             completion(CVs)
         }

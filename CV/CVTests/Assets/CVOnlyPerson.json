@@ -1,0 +1,10 @@
+{
+  "person": {
+    "firstName": "Matthew",
+    "middleName": "",
+    "lastName": "Smith",
+    "nationality": "British",
+    "dateOfBirth": "1980-01-12T04:00:00.000Z",
+    "availableFrom": "2020-04-01T04:00:00.000Z"
+  }
+}

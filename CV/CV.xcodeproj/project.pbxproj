@@ -11,7 +11,6 @@
 		D964564D240D535B00F99C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D964564B240D535B00F99C64 /* Main.storyboard */; };
 		D964564F240D535C00F99C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D964564E240D535C00F99C64 /* Assets.xcassets */; };
 		D9645652240D535C00F99C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9645650240D535C00F99C64 /* LaunchScreen.storyboard */; };
-		D964565D240D535C00F99C64 /* CVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964565C240D535C00F99C64 /* CVTests.swift */; };
 		D9645668240D535C00F99C64 /* CVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645667240D535C00F99C64 /* CVUITests.swift */; };
 		D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964567B240D9D0900F99C64 /* CVListViewController.swift */; };
 		D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964567D240D9D6900F99C64 /* CVListViewModel.swift */; };
@@ -37,6 +36,18 @@
 		D96456AA240FBFEC00F99C64 /* CellDisplayableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */; };
 		D96456AC240FF84400F99C64 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AB240FF84400F99C64 /* Date+Extensions.swift */; };
 		D96456AE240FFD9C00F99C64 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */; };
+		D98697D024100C6F00C58956 /* CVAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697CF24100C6F00C58956 /* CVAPITests.swift */; };
+		D98697D124100D0C00C58956 /* LocalCVList.json in Resources */ = {isa = PBXBuildFile; fileRef = D9645698240E839400F99C64 /* LocalCVList.json */; };
+		D98697D32410148400C58956 /* CV+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697D22410148400C58956 /* CV+Tests.swift */; };
+		D98697D5241015AC00C58956 /* CVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697D4241015AC00C58956 /* CVTests.swift */; };
+		D98697D7241015F700C58956 /* CVOnlyPerson.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697D6241015F700C58956 /* CVOnlyPerson.json */; };
+		D98697D924101A5300C58956 /* CVOnlyPerson.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697D6241015F700C58956 /* CVOnlyPerson.json */; };
+		D98697DC24101B2D00C58956 /* FileDeserialiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697DB24101B2D00C58956 /* FileDeserialiser.swift */; };
+		D98697DF24101BCC00C58956 /* WorkEntry+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697DE24101BCC00C58956 /* WorkEntry+Tests.swift */; };
+		D98697E124101C4900C58956 /* ExampleWorkEntry.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697E024101C4900C58956 /* ExampleWorkEntry.json */; };
+		D98697E224101D3700C58956 /* ExampleWorkEntry.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697E024101C4900C58956 /* ExampleWorkEntry.json */; };
+		D98697E424101D4900C58956 /* WorkEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697E324101D4900C58956 /* WorkEntryTests.swift */; };
+		D98697E624103CF000C58956 /* CVListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697E524103CF000C58956 /* CVListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +75,6 @@
 		D9645651240D535C00F99C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9645653240D535C00F99C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9645658240D535C00F99C64 /* CVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D964565C240D535C00F99C64 /* CVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTests.swift; sourceTree = "<group>"; };
 		D964565E240D535C00F99C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9645663240D535C00F99C64 /* CVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9645667240D535C00F99C64 /* CVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVUITests.swift; sourceTree = "<group>"; };
@@ -93,6 +103,15 @@
 		D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayableViewModel.swift; sourceTree = "<group>"; };
 		D96456AB240FF84400F99C64 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		D98697CF24100C6F00C58956 /* CVAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAPITests.swift; sourceTree = "<group>"; };
+		D98697D22410148400C58956 /* CV+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CV+Tests.swift"; sourceTree = "<group>"; };
+		D98697D4241015AC00C58956 /* CVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTests.swift; sourceTree = "<group>"; };
+		D98697D6241015F700C58956 /* CVOnlyPerson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CVOnlyPerson.json; sourceTree = "<group>"; };
+		D98697DB24101B2D00C58956 /* FileDeserialiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDeserialiser.swift; sourceTree = "<group>"; };
+		D98697DE24101BCC00C58956 /* WorkEntry+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkEntry+Tests.swift"; sourceTree = "<group>"; };
+		D98697E024101C4900C58956 /* ExampleWorkEntry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExampleWorkEntry.json; sourceTree = "<group>"; };
+		D98697E324101D4900C58956 /* WorkEntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkEntryTests.swift; sourceTree = "<group>"; };
+		D98697E524103CF000C58956 /* CVListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +175,13 @@
 		D964565B240D535C00F99C64 /* CVTests */ = {
 			isa = PBXGroup;
 			children = (
-				D964565C240D535C00F99C64 /* CVTests.swift */,
+				D98697DD24101BA900C58956 /* Assets */,
+				D98697DA24101B1100C58956 /* Helpers */,
+				D98697CF24100C6F00C58956 /* CVAPITests.swift */,
 				D964565E240D535C00F99C64 /* Info.plist */,
+				D98697D4241015AC00C58956 /* CVTests.swift */,
+				D98697E324101D4900C58956 /* WorkEntryTests.swift */,
+				D98697E524103CF000C58956 /* CVListViewModelTests.swift */,
 			);
 			path = CVTests;
 			sourceTree = "<group>";
@@ -211,9 +235,9 @@
 				D9645645240D535B00F99C64 /* AppDelegate.swift */,
 				D9645690240E6DB100F99C64 /* URLs.swift */,
 				D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */,
-				D9645698240E839400F99C64 /* LocalCVList.json */,
 				D96456AB240FF84400F99C64 /* Date+Extensions.swift */,
 				D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */,
+				D9645698240E839400F99C64 /* LocalCVList.json */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -248,6 +272,25 @@
 				D96456A5240FBB6E00F99C64 /* CVDetailCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D98697DA24101B1100C58956 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D98697D22410148400C58956 /* CV+Tests.swift */,
+				D98697DB24101B2D00C58956 /* FileDeserialiser.swift */,
+				D98697DE24101BCC00C58956 /* WorkEntry+Tests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D98697DD24101BA900C58956 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D98697D6241015F700C58956 /* CVOnlyPerson.json */,
+				D98697E024101C4900C58956 /* ExampleWorkEntry.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,9 +397,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98697E224101D3700C58956 /* ExampleWorkEntry.json in Resources */,
 				D9645699240E839400F99C64 /* LocalCVList.json in Resources */,
 				D9645652240D535C00F99C64 /* LaunchScreen.storyboard in Resources */,
 				D964564F240D535C00F99C64 /* Assets.xcassets in Resources */,
+				D98697D924101A5300C58956 /* CVOnlyPerson.json in Resources */,
 				D964564D240D535B00F99C64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +410,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98697D7241015F700C58956 /* CVOnlyPerson.json in Resources */,
+				D98697E124101C4900C58956 /* ExampleWorkEntry.json in Resources */,
+				D98697D124100D0C00C58956 /* LocalCVList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +461,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D964565D240D535C00F99C64 /* CVTests.swift in Sources */,
+				D98697D32410148400C58956 /* CV+Tests.swift in Sources */,
+				D98697E424101D4900C58956 /* WorkEntryTests.swift in Sources */,
+				D98697DC24101B2D00C58956 /* FileDeserialiser.swift in Sources */,
+				D98697DF24101BCC00C58956 /* WorkEntry+Tests.swift in Sources */,
+				D98697D5241015AC00C58956 /* CVTests.swift in Sources */,
+				D98697E624103CF000C58956 /* CVListViewModelTests.swift in Sources */,
+				D98697D024100C6F00C58956 /* CVAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

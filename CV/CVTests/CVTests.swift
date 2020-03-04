@@ -1,34 +1,22 @@
-//
-//  CVTests.swift
-//  CVTests
-//
-//  Created by Bazyl Reinstein on 2/3/20.
-//  Copyright © 2020 Bazyl Reinstein. All rights reserved.
-//
-
 import XCTest
 @testable import CV
 
 class CVTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testExampleCV() {
+        let cv = CV.exampleCV
+        XCTAssertEqual(cv.person.firstName, "Jonathan")
+        XCTAssertEqual(cv.workEntries!.count, 2)
+        XCTAssertEqual(cv.courses!.count, 2)
+        XCTAssertEqual(cv.trainings!.count, 1)
+        XCTAssertEqual(cv.skills!.count, 1)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testEmptyCVJustPerson() {
+        let cv = CV.emptyCVJustPerson
+        XCTAssertEqual(cv.person.firstName, "Matthew")
+        XCTAssertNil(cv.workEntries)
+        XCTAssertNil(cv.courses)
+        XCTAssertNil(cv.trainings)
+        XCTAssertNil(cv.skills)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

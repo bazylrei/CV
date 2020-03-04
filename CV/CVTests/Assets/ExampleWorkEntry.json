@@ -1,0 +1,13 @@
+{
+  "companyName": "HSBC",
+  "imageURLString": "https://i1.wp.com/www.thevideoanimationcompany.com/wp-content/uploads/2017/08/HSBC-logo.png",
+  "position": "developer",
+  "responsibilities": [
+    "writing code",
+    "testing",
+    "coming up with new solutions"
+  ],
+  "shortDescription": "John Smith was in charge ofwriting code at HSBC",
+  "startDate": "2011-01-01T04:00:00.000Z",
+  "endDate": "2012-01-01T04:00:00.000Z"
+}
