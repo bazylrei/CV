@@ -9,9 +9,14 @@ protocol CVListViewModelType {
 
 class CVListViewModel: CVListViewModelType {
     
-    private let api: CVAPIType = CVAPI()
-    private let appRouter: AppRouterType = AppRouter()
+    private let api: CVAPIType
+    private let appRouter: AppRouterType
     private var cvList = [CV]()
+    
+    init(api: CVAPIType = CVAPI(), appRouter: AppRouterType = AppRouter()) {
+        self.api = api
+        self.appRouter = appRouter
+    }
     
     func fetchCVList(completion: @escaping (() -> Void)) {
         api.fetchCVs { [weak self] cvs in
