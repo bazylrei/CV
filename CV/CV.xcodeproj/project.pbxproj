@@ -36,6 +36,7 @@
 		D96456A8240FBCA300F99C64 /* CellDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A7240FBCA300F99C64 /* CellDisplayable.swift */; };
 		D96456AA240FBFEC00F99C64 /* CellDisplayableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */; };
 		D96456AC240FF84400F99C64 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AB240FF84400F99C64 /* Date+Extensions.swift */; };
+		D96456AE240FFD9C00F99C64 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		D96456A7240FBCA300F99C64 /* CellDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayable.swift; sourceTree = "<group>"; };
 		D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayableViewModel.swift; sourceTree = "<group>"; };
 		D96456AB240FF84400F99C64 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 				D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */,
 				D9645698240E839400F99C64 /* LocalCVList.json */,
 				D96456AB240FF84400F99C64 /* Date+Extensions.swift */,
+				D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				D964569E240E9BCE00F99C64 /* CVDetailsViewController.swift in Sources */,
 				D964568D240E6A4700F99C64 /* CVAPI.swift in Sources */,
 				D9645646240D535B00F99C64 /* AppDelegate.swift in Sources */,
+				D96456AE240FFD9C00F99C64 /* UIImageView+Extensions.swift in Sources */,
 				D9645697240E836600F99C64 /* CVLocalService.swift in Sources */,
 				D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */,
 				D964568F240E6ADD00F99C64 /* CVGistService.swift in Sources */,

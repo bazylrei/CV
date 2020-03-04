@@ -12,6 +12,7 @@
       "workEntries":
         [{
           "companyName": "ITV",
+          "imageURLString": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/ITV_logo_2019.svg/1200px-ITV_logo_2019.svg.png",
           "position": "intern",
           "responsibilities": [
             "preparing coffee",
@@ -24,6 +25,7 @@
           {
           "companyName": "BBC",
           "position": "presenter",
+          "imageURLString": "https://worldsoccertalk.com/wp-content/uploads/2015/11/bbc-logo.png",
           "responsibilities": [
             "preparing material",
             "presenting",
