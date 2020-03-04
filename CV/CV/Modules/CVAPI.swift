@@ -7,7 +7,7 @@ protocol CVAPIType {
 class CVAPI: NSObject, CVAPIType {
     private let cvService: CVServiceType
     
-    init(service: CVServiceType = CVGistService()) {
+    init(service: CVServiceType = CVLocalService()) {
         self.cvService = service
     }
     

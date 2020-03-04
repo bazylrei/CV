@@ -8,7 +8,7 @@ class CVListViewModelTests: XCTestCase {
     var viewModel: CVListViewModel!
     
     override func setUp() {
-        viewModel = CVListViewModel(api: MockAPI(), appRouter: MockRouter())
+        viewModel = CVListViewModel(api: api, appRouter: router)
     }
     
     override func tearDown() {
