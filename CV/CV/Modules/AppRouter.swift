@@ -21,12 +21,8 @@ protocol AppRouterType {
 
 class AppRouter: AppRouterType {
     func presentCVDetails(with cv: CV) {
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        guard let vc = storyboard.instantiateViewController(identifier: Screen.cvDetail(cv).identifier) as? CVDetailsViewController else {
-            return
-        }
         let viewModel = CVDetailsViewModel(cv: cv)
-        vc.viewModel = viewModel
+        let vc = CVDetailsViewController(viewModel: viewModel)
         navController?.pushViewController(vc, animated: true)
     }
     
