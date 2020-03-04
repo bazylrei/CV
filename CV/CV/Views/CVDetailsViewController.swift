@@ -2,7 +2,8 @@ import UIKit
 
 class CVDetailsViewController: UIViewController {
     
-    var viewModel: CVDetailsViewModelType
+    let viewModel: CVDetailsViewModelType
+    let cellReuseIdentifier = String(describing: CVDetailCell.self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class CVDetailsViewController: UIViewController {
     private func setupTableView() {
         let tableView = UITableView()
         view.addSubview(tableView)
+        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         let centerXConstraint = NSLayoutConstraint(item: tableView,
                                                    attribute: .centerX,
@@ -57,6 +59,7 @@ class CVDetailsViewController: UIViewController {
                              topConstraint])
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(CVDetailCell.self, forCellReuseIdentifier: cellReuseIdentifier)
     }
 }
 
@@ -69,7 +72,10 @@ extension CVDetailsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
+        let text = viewModel.info(for: indexPath)
+        cell.textLabel?.text = text
+        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

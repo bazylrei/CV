@@ -26,6 +26,7 @@ protocol CVDetailsViewModelType {
     var numberOfSections: Int { get }
     func numberOfRows(for section: Int) -> Int
     func title(for section: Int) -> String?
+    func info(for index: IndexPath) -> String?
 }
 
 class CVDetailsViewModel: NSObject, CVDetailsViewModelType {
@@ -56,23 +57,38 @@ class CVDetailsViewModel: NSObject, CVDetailsViewModelType {
     }()
     
     func numberOfRows(for section: Int) -> Int {
-        guard let section = Section(rawValue: section),
-            let cv = cv else {
+        guard let section = Section(rawValue: section) else {
             return 0
         }
         switch section {
         case .workEntries:
-            return cv.workEntries?.count ?? 0
+            return cv?.workEntries?.count ?? 0
         case .courses:
-            return cv.courses?.count ?? 0
+            return cv?.courses?.count ?? 0
         case .trainings:
-            return cv.trainings?.count ?? 0
+            return cv?.trainings?.count ?? 0
         case .skills:
-            return cv.skills?.count ?? 0
+            return cv?.skills?.count ?? 0
         }
     }
     
     func title(for section: Int) -> String? {
         return Section(rawValue: section)?.title
+    }
+    
+    func info(for index: IndexPath) -> String? {
+        guard let section = Section(rawValue: index.section) else {
+            return nil
+        }
+        switch section {
+        case .workEntries:
+            return cv?.workEntries?[index.item].companyName
+        case .courses:
+            return cv?.courses?[index.item].name
+        case .trainings:
+            return cv?.trainings?[index.item].name
+        case .skills:
+            return cv?.skills?[index.item].name
+        }
     }
 }
