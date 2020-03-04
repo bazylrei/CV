@@ -21,7 +21,6 @@ enum Section: Int, CaseIterable {
 }
 
 protocol CVDetailsViewModelType {
-    var cv: CV? { get }
     var title: String { get }
     var numberOfSections: Int { get }
     func numberOfRows(for section: Int) -> Int
@@ -30,29 +29,18 @@ protocol CVDetailsViewModelType {
 }
 
 class CVDetailsViewModel: NSObject, CVDetailsViewModelType {
-    var cv: CV?
+    private var cv: CV
     
     init(cv: CV) {
-        super.init()
         self.cv = cv
-    }
-    
-    override init() {
         super.init()
     }
-    
-    
+
     var title: String {
-        guard let cv = cv else {
-            return ""
-        }
         return "\(cv.person.firstName) \(cv.person.lastName)"
     }
     
     lazy var numberOfSections: Int = {
-        guard let cv = cv else {
-            return 0
-        }
         return Section.allCases.count
     }()
     
@@ -62,13 +50,13 @@ class CVDetailsViewModel: NSObject, CVDetailsViewModelType {
         }
         switch section {
         case .workEntries:
-            return cv?.workEntries?.count ?? 0
+            return cv.workEntries?.count ?? 0
         case .courses:
-            return cv?.courses?.count ?? 0
+            return cv.courses?.count ?? 0
         case .trainings:
-            return cv?.trainings?.count ?? 0
+            return cv.trainings?.count ?? 0
         case .skills:
-            return cv?.skills?.count ?? 0
+            return cv.skills?.count ?? 0
         }
     }
     
@@ -82,13 +70,13 @@ class CVDetailsViewModel: NSObject, CVDetailsViewModelType {
         }
         switch section {
         case .workEntries:
-            return cv?.workEntries?[index.item].cellDisplayableDetails()
+            return cv.workEntries?[index.item].cellDisplayableDetails()
         case .courses:
-            return cv?.courses?[index.item].cellDisplayableDetails()
+            return cv.courses?[index.item].cellDisplayableDetails()
         case .trainings:
-            return cv?.trainings?[index.item].cellDisplayableDetails()
+            return cv.trainings?[index.item].cellDisplayableDetails()
         case .skills:
-            return cv?.skills?[index.item].cellDisplayableDetails()
+            return cv.skills?[index.item].cellDisplayableDetails()
         }
     }
 }

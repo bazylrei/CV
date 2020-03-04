@@ -2,13 +2,13 @@ import UIKit
 
 enum Screen {
     case cvList
-    case cvDetail(CV)
+    case cvDetail
     
     var identifier: String {
         switch self {
         case .cvList:
             return String(describing: CVListViewController.self)
-        case .cvDetail(_):
+        case .cvDetail:
             return String(describing: CVDetailsViewController.self)
         }
     }
@@ -30,10 +30,14 @@ class AppRouter: AppRouterType {
         navController?.popViewController(animated: true)
     }
     
-    lazy var navController: UINavigationController? = {
-        guard let navController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController else {
+    private lazy var navController: UINavigationController? = {
+        guard let navController = keyWindow?.rootViewController as? UINavigationController else {
             return nil
         }
         return navController
+    }()
+    
+    private lazy var keyWindow: UIWindow? = {
+        return UIApplication.shared.windows.filter {$0.isKeyWindow}.first
     }()
 }

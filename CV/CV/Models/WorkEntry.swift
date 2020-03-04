@@ -15,11 +15,14 @@ extension WorkEntry: CellDisplayable {
         let responsibilitiesString = responsibilities?
             .map{"· \($0)"}
             .joined(separator: "\n")
+        
         var imageURL: URL?
         if let imageURLString = imageURLString {
             imageURL = URL(string: imageURLString)
         }
+        
         let companyAndTitleString = "\(companyName)\n\(position)"
+        
         var workTime = "\(startDate.monthYearString)"
         if let endDate = endDate {
             workTime += " - \(endDate.monthYearString)"

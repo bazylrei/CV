@@ -12,7 +12,7 @@ class CVDetailCell: UITableViewCell {
     private let marginSize = CGFloat(12.0)
     private let imageDimension = CGFloat(40.0)
     
-    private func setup(with displayData: CellDisplayableViewModel?) {
+    func setup(with displayData: CellDisplayableViewModel?) {
         guard let displayData = displayData else {
             print("no details to display in cell")
             return
