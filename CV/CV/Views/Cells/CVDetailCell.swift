@@ -12,7 +12,7 @@ class CVDetailCell: UITableViewCell {
     private let marginSize = CGFloat(12.0)
     private let imageDimension = CGFloat(40.0)
     
-    func setup(with displayData: CellDisplayableViewModel?) {
+    private func setup(with displayData: CellDisplayableViewModel?) {
         guard let displayData = displayData else {
             print("no details to display in cell")
             return
@@ -20,6 +20,7 @@ class CVDetailCell: UITableViewCell {
         self.titleLabel.text = displayData.title
         self.detailLabel.text = displayData.detail
         self.subtitleLabel.text = displayData.subtitle
+        
         if let imageURL = displayData.imageURL {
             imageHeightConstraint.constant = imageDimension
             self.iconImage.setImageAsync(with: imageURL)
