@@ -19,9 +19,14 @@ extension WorkEntry: CellDisplayable {
         if let imageURLString = imageURLString {
             imageURL = URL(string: imageURLString)
         }
+        let companyAndTitleString = "\(companyName)\n\(position)"
+        var workTime = "\(startDate.monthYearString)"
+        if let endDate = endDate {
+            workTime += " - \(endDate.monthYearString)"
+        }
         return CellDisplayableViewModel(imageURL: imageURL,
-                                        title: companyName,
-                                        detail: position,
+                                        title: companyAndTitleString,
+                                        detail: workTime,
                                         subtitle: responsibilitiesString)
     }
 }

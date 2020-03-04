@@ -35,6 +35,7 @@
 		D96456A6240FBB6E00F99C64 /* CVDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A5240FBB6E00F99C64 /* CVDetailCell.swift */; };
 		D96456A8240FBCA300F99C64 /* CellDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A7240FBCA300F99C64 /* CellDisplayable.swift */; };
 		D96456AA240FBFEC00F99C64 /* CellDisplayableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */; };
+		D96456AC240FF84400F99C64 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AB240FF84400F99C64 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		D96456A5240FBB6E00F99C64 /* CVDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDetailCell.swift; sourceTree = "<group>"; };
 		D96456A7240FBCA300F99C64 /* CellDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayable.swift; sourceTree = "<group>"; };
 		D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayableViewModel.swift; sourceTree = "<group>"; };
+		D96456AB240FF84400F99C64 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				D9645690240E6DB100F99C64 /* URLs.swift */,
 				D9645694240E75EB00F99C64 /* DateFormatter+Extensions.swift */,
 				D9645698240E839400F99C64 /* LocalCVList.json */,
+				D96456AB240FF84400F99C64 /* Date+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */,
 				D964568F240E6ADD00F99C64 /* CVGistService.swift in Sources */,
 				D96456A2240E9C9600F99C64 /* AppRouter.swift in Sources */,
+				D96456AC240FF84400F99C64 /* Date+Extensions.swift in Sources */,
 				D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */,
 				D96456AA240FBFEC00F99C64 /* CellDisplayableViewModel.swift in Sources */,
 				D9645683240E5D5600F99C64 /* WorkEntry.swift in Sources */,
