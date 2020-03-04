@@ -6,3 +6,11 @@ class Training: NSObject, Codable {
     let date: Date?
     let shortDescription: String?
 }
+
+extension Training: CellDisplayable {
+    func cellDisplayableDetails() -> CellDisplayableViewModel {
+        return CellDisplayableViewModel(title: name,
+                                        detail: location,
+                                        subtitle: shortDescription)
+    }
+}

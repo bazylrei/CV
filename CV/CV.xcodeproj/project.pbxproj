@@ -34,6 +34,7 @@
 		D96456A2240E9C9600F99C64 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A1240E9C9600F99C64 /* AppRouter.swift */; };
 		D96456A6240FBB6E00F99C64 /* CVDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A5240FBB6E00F99C64 /* CVDetailCell.swift */; };
 		D96456A8240FBCA300F99C64 /* CellDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A7240FBCA300F99C64 /* CellDisplayable.swift */; };
+		D96456AA240FBFEC00F99C64 /* CellDisplayableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		D96456A1240E9C9600F99C64 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		D96456A5240FBB6E00F99C64 /* CVDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDetailCell.swift; sourceTree = "<group>"; };
 		D96456A7240FBCA300F99C64 /* CellDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayable.swift; sourceTree = "<group>"; };
+		D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			children = (
 				D964567D240D9D6900F99C64 /* CVListViewModel.swift */,
 				D964569F240E9BE400F99C64 /* CVDetailsViewModel.swift */,
+				D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				D964568F240E6ADD00F99C64 /* CVGistService.swift in Sources */,
 				D96456A2240E9C9600F99C64 /* AppRouter.swift in Sources */,
 				D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */,
+				D96456AA240FBFEC00F99C64 /* CellDisplayableViewModel.swift in Sources */,
 				D9645683240E5D5600F99C64 /* WorkEntry.swift in Sources */,
 				D9645685240E5D6F00F99C64 /* Person.swift in Sources */,
 				D9645681240E5D0C00F99C64 /* CV.swift in Sources */,

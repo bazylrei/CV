@@ -8,3 +8,14 @@ class WorkEntry: NSObject, Codable {
     let startDate: Date
     let endDate: Date?
 }
+
+extension WorkEntry: CellDisplayable {
+    func cellDisplayableDetails() -> CellDisplayableViewModel {
+         let responsibilitiesString = responsibilities?.reduce("", { (result, nextItem) -> String in
+            "\(result)\n\(nextItem)"
+        })
+        return CellDisplayableViewModel(title: companyName,
+                                        detail: position,
+                                        subtitle: responsibilitiesString)
+    }
+}

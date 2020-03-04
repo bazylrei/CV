@@ -26,7 +26,7 @@ protocol CVDetailsViewModelType {
     var numberOfSections: Int { get }
     func numberOfRows(for section: Int) -> Int
     func title(for section: Int) -> String?
-    func info(for index: IndexPath) -> String?
+    func info(for index: IndexPath) -> CellDisplayableViewModel?
 }
 
 class CVDetailsViewModel: NSObject, CVDetailsViewModelType {
@@ -76,19 +76,19 @@ class CVDetailsViewModel: NSObject, CVDetailsViewModelType {
         return Section(rawValue: section)?.title
     }
     
-    func info(for index: IndexPath) -> String? {
+    func info(for index: IndexPath) -> CellDisplayableViewModel? {
         guard let section = Section(rawValue: index.section) else {
             return nil
         }
         switch section {
         case .workEntries:
-            return cv?.workEntries?[index.item].companyName
+            return cv?.workEntries?[index.item].cellDisplayableDetails()
         case .courses:
-            return cv?.courses?[index.item].name
+            return cv?.courses?[index.item].cellDisplayableDetails()
         case .trainings:
-            return cv?.trainings?[index.item].name
+            return cv?.trainings?[index.item].cellDisplayableDetails()
         case .skills:
-            return cv?.skills?[index.item].name
+            return cv?.skills?[index.item].cellDisplayableDetails()
         }
     }
 }

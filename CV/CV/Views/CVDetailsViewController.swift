@@ -72,9 +72,11 @@ extension CVDetailsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
-        let text = viewModel.info(for: indexPath)
-        cell.textLabel?.text = text
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as? CVDetailCell else {
+            return UITableViewCell()
+        }
+        let displayData = viewModel.info(for: indexPath)
+        cell.setup(with: displayData)
         return cell
     }
     
