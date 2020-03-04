@@ -36,6 +36,11 @@
 		D96456AA240FBFEC00F99C64 /* CellDisplayableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */; };
 		D96456AC240FF84400F99C64 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AB240FF84400F99C64 /* Date+Extensions.swift */; };
 		D96456AE240FFD9C00F99C64 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */; };
+		D969F15924104EEF00F42375 /* CVDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F15824104EEF00F42375 /* CVDetailsViewModelTests.swift */; };
+		D969F15B241060D500F42375 /* ExampleCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F15A241060D500F42375 /* ExampleCourse.json */; };
+		D969F15D241060FB00F42375 /* Course+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F15C241060FB00F42375 /* Course+Tests.swift */; };
+		D969F15F2410615E00F42375 /* CourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F15E2410615E00F42375 /* CourseTests.swift */; };
+		D969F160241061B400F42375 /* ExampleCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F15A241060D500F42375 /* ExampleCourse.json */; };
 		D98697D024100C6F00C58956 /* CVAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697CF24100C6F00C58956 /* CVAPITests.swift */; };
 		D98697D124100D0C00C58956 /* LocalCVList.json in Resources */ = {isa = PBXBuildFile; fileRef = D9645698240E839400F99C64 /* LocalCVList.json */; };
 		D98697D32410148400C58956 /* CV+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697D22410148400C58956 /* CV+Tests.swift */; };
@@ -103,6 +108,10 @@
 		D96456A9240FBFEC00F99C64 /* CellDisplayableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDisplayableViewModel.swift; sourceTree = "<group>"; };
 		D96456AB240FF84400F99C64 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		D969F15824104EEF00F42375 /* CVDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		D969F15A241060D500F42375 /* ExampleCourse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExampleCourse.json; sourceTree = "<group>"; };
+		D969F15C241060FB00F42375 /* Course+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+Tests.swift"; sourceTree = "<group>"; };
+		D969F15E2410615E00F42375 /* CourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTests.swift; sourceTree = "<group>"; };
 		D98697CF24100C6F00C58956 /* CVAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAPITests.swift; sourceTree = "<group>"; };
 		D98697D22410148400C58956 /* CV+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CV+Tests.swift"; sourceTree = "<group>"; };
 		D98697D4241015AC00C58956 /* CVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTests.swift; sourceTree = "<group>"; };
@@ -182,6 +191,8 @@
 				D98697D4241015AC00C58956 /* CVTests.swift */,
 				D98697E324101D4900C58956 /* WorkEntryTests.swift */,
 				D98697E524103CF000C58956 /* CVListViewModelTests.swift */,
+				D969F15824104EEF00F42375 /* CVDetailsViewModelTests.swift */,
+				D969F15E2410615E00F42375 /* CourseTests.swift */,
 			);
 			path = CVTests;
 			sourceTree = "<group>";
@@ -280,6 +291,7 @@
 				D98697D22410148400C58956 /* CV+Tests.swift */,
 				D98697DB24101B2D00C58956 /* FileDeserialiser.swift */,
 				D98697DE24101BCC00C58956 /* WorkEntry+Tests.swift */,
+				D969F15C241060FB00F42375 /* Course+Tests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -289,6 +301,7 @@
 			children = (
 				D98697D6241015F700C58956 /* CVOnlyPerson.json */,
 				D98697E024101C4900C58956 /* ExampleWorkEntry.json */,
+				D969F15A241060D500F42375 /* ExampleCourse.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -403,6 +416,7 @@
 				D964564F240D535C00F99C64 /* Assets.xcassets in Resources */,
 				D98697D924101A5300C58956 /* CVOnlyPerson.json in Resources */,
 				D964564D240D535B00F99C64 /* Main.storyboard in Resources */,
+				D969F160241061B400F42375 /* ExampleCourse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +427,7 @@
 				D98697D7241015F700C58956 /* CVOnlyPerson.json in Resources */,
 				D98697E124101C4900C58956 /* ExampleWorkEntry.json in Resources */,
 				D98697D124100D0C00C58956 /* LocalCVList.json in Resources */,
+				D969F15B241060D500F42375 /* ExampleCourse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +482,9 @@
 				D98697DF24101BCC00C58956 /* WorkEntry+Tests.swift in Sources */,
 				D98697D5241015AC00C58956 /* CVTests.swift in Sources */,
 				D98697E624103CF000C58956 /* CVListViewModelTests.swift in Sources */,
+				D969F15F2410615E00F42375 /* CourseTests.swift in Sources */,
+				D969F15924104EEF00F42375 /* CVDetailsViewModelTests.swift in Sources */,
+				D969F15D241060FB00F42375 /* Course+Tests.swift in Sources */,
 				D98697D024100C6F00C58956 /* CVAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
