@@ -11,9 +11,12 @@ class WorkEntry: NSObject, Codable {
 
 extension WorkEntry: CellDisplayable {
     func cellDisplayableDetails() -> CellDisplayableViewModel {
-         let responsibilitiesString = responsibilities?.reduce("", { (result, nextItem) -> String in
-            "\(result)\n\(nextItem)"
-        })
+        let responsibilitiesString = responsibilities?
+            .map{"· \($0)"}
+            .joined(separator: "\n")
+//         let responsibilitiesString = responsibilities?.reduce("", { (result, nextItem) -> String in
+//            "\(result)· \(nextItem)\n".trimmingCharacters(in: .whitespacesAndNewlines)
+//        })
         return CellDisplayableViewModel(title: companyName,
                                         detail: position,
                                         subtitle: responsibilitiesString)

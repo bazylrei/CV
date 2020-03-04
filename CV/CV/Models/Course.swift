@@ -8,7 +8,7 @@ class Course: NSObject, Codable {
 extension Course: CellDisplayable {
     func cellDisplayableDetails() -> CellDisplayableViewModel {
         return CellDisplayableViewModel(title: name,
-                                        detail: shortDescription,
-                                        subtitle: nil)
+                                        detail: nil,
+                                        subtitle: shortDescription)
     }
 }
