@@ -9,7 +9,8 @@ class Training: NSObject, Codable {
 
 extension Training: CellDisplayable {
     func cellDisplayableDetails() -> CellDisplayableViewModel {
-        return CellDisplayableViewModel(title: name,
+        return CellDisplayableViewModel(imageURL: nil,
+                                        title: name,
                                         detail: location,
                                         subtitle: shortDescription)
     }

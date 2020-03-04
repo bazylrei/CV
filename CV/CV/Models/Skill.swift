@@ -15,7 +15,8 @@ class Skill: NSObject, Codable {
 
 extension Skill: CellDisplayable {
     func cellDisplayableDetails() -> CellDisplayableViewModel {
-        return CellDisplayableViewModel(title: name,
+        return CellDisplayableViewModel(imageURL: nil,
+                                        title: name,
                                         detail: level.rawValue,
                                         subtitle: nil)
     }
