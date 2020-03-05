@@ -17,6 +17,10 @@ class CVListViewModelTests: XCTestCase {
         viewModel = nil
     }
     
+    func testHeaderTitle() {
+        XCTAssertEqual(viewModel.title, "CV list")
+    }
+    
     func testFetchCVList() {
         viewModel.fetchCVList { [weak self] in
             XCTAssertEqual(self!.viewModel.numberOfRows, 2)
