@@ -36,26 +36,22 @@
 		D96456AC240FF84400F99C64 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AB240FF84400F99C64 /* Date+Extensions.swift */; };
 		D96456AE240FFD9C00F99C64 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */; };
 		D969F15924104EEF00F42375 /* CVDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F15824104EEF00F42375 /* CVDetailsViewModelTests.swift */; };
-		D969F15B241060D500F42375 /* ExampleCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F15A241060D500F42375 /* ExampleCourse.json */; };
 		D969F15D241060FB00F42375 /* Course+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F15C241060FB00F42375 /* Course+Tests.swift */; };
 		D969F15F2410615E00F42375 /* CourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F15E2410615E00F42375 /* CourseTests.swift */; };
-		D969F160241061B400F42375 /* ExampleCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F15A241060D500F42375 /* ExampleCourse.json */; };
-		D969F162241062C800F42375 /* ExampleTraining.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F161241062C800F42375 /* ExampleTraining.json */; };
-		D969F163241062C800F42375 /* ExampleTraining.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F161241062C800F42375 /* ExampleTraining.json */; };
 		D969F165241062F000F42375 /* Training+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F164241062F000F42375 /* Training+Tests.swift */; };
 		D969F1672410634800F42375 /* TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F1662410634800F42375 /* TrainingTests.swift */; };
 		D969F16A2410F2D000F42375 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D969F16C2410F2D000F42375 /* Localizable.strings */; };
 		D969F16E2410F35300F42375 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F16D2410F35300F42375 /* String+Localized.swift */; };
+		D969F1712410F53500F42375 /* CVOnlyPerson.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697D6241015F700C58956 /* CVOnlyPerson.json */; };
+		D969F1722410F53500F42375 /* ExampleWorkEntry.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697E024101C4900C58956 /* ExampleWorkEntry.json */; };
+		D969F1732410F53500F42375 /* ExampleCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F15A241060D500F42375 /* ExampleCourse.json */; };
+		D969F1742410F53500F42375 /* ExampleTraining.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F161241062C800F42375 /* ExampleTraining.json */; };
 		D98697D024100C6F00C58956 /* CVAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697CF24100C6F00C58956 /* CVAPITests.swift */; };
 		D98697D124100D0C00C58956 /* LocalCVList.json in Resources */ = {isa = PBXBuildFile; fileRef = D9645698240E839400F99C64 /* LocalCVList.json */; };
 		D98697D32410148400C58956 /* CV+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697D22410148400C58956 /* CV+Tests.swift */; };
 		D98697D5241015AC00C58956 /* CVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697D4241015AC00C58956 /* CVTests.swift */; };
-		D98697D7241015F700C58956 /* CVOnlyPerson.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697D6241015F700C58956 /* CVOnlyPerson.json */; };
-		D98697D924101A5300C58956 /* CVOnlyPerson.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697D6241015F700C58956 /* CVOnlyPerson.json */; };
 		D98697DC24101B2D00C58956 /* FileDeserialiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697DB24101B2D00C58956 /* FileDeserialiser.swift */; };
 		D98697DF24101BCC00C58956 /* WorkEntry+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697DE24101BCC00C58956 /* WorkEntry+Tests.swift */; };
-		D98697E124101C4900C58956 /* ExampleWorkEntry.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697E024101C4900C58956 /* ExampleWorkEntry.json */; };
-		D98697E224101D3700C58956 /* ExampleWorkEntry.json in Resources */ = {isa = PBXBuildFile; fileRef = D98697E024101C4900C58956 /* ExampleWorkEntry.json */; };
 		D98697E424101D4900C58956 /* WorkEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697E324101D4900C58956 /* WorkEntryTests.swift */; };
 		D98697E624103CF000C58956 /* CVListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697E524103CF000C58956 /* CVListViewModelTests.swift */; };
 /* End PBXBuildFile section */
@@ -374,15 +370,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98697E224101D3700C58956 /* ExampleWorkEntry.json in Resources */,
 				D9645699240E839400F99C64 /* LocalCVList.json in Resources */,
 				D9645652240D535C00F99C64 /* LaunchScreen.storyboard in Resources */,
 				D964564F240D535C00F99C64 /* Assets.xcassets in Resources */,
 				D969F16A2410F2D000F42375 /* Localizable.strings in Resources */,
-				D969F162241062C800F42375 /* ExampleTraining.json in Resources */,
-				D98697D924101A5300C58956 /* CVOnlyPerson.json in Resources */,
 				D964564D240D535B00F99C64 /* Main.storyboard in Resources */,
-				D969F160241061B400F42375 /* ExampleCourse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,11 +382,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98697D7241015F700C58956 /* CVOnlyPerson.json in Resources */,
-				D98697E124101C4900C58956 /* ExampleWorkEntry.json in Resources */,
+				D969F1722410F53500F42375 /* ExampleWorkEntry.json in Resources */,
 				D98697D124100D0C00C58956 /* LocalCVList.json in Resources */,
-				D969F15B241060D500F42375 /* ExampleCourse.json in Resources */,
-				D969F163241062C800F42375 /* ExampleTraining.json in Resources */,
+				D969F1712410F53500F42375 /* CVOnlyPerson.json in Resources */,
+				D969F1732410F53500F42375 /* ExampleCourse.json in Resources */,
+				D969F1742410F53500F42375 /* ExampleTraining.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
