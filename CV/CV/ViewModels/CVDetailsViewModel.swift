@@ -9,13 +9,13 @@ enum Section: Int, CaseIterable {
     var title: String {
         switch self {
         case .workEntries:
-            return "Previous positions"
+            return "Previous positions".localized
         case .courses:
-            return "Completed courses"
+            return "Completed courses".localized
         case .trainings:
-            return "Trainings"
+            return "Trainings".localized
         case .skills:
-            return "Skills"
+            return "Skills".localized
         }
     }
 }

@@ -11,7 +11,6 @@
 		D964564D240D535B00F99C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D964564B240D535B00F99C64 /* Main.storyboard */; };
 		D964564F240D535C00F99C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D964564E240D535C00F99C64 /* Assets.xcassets */; };
 		D9645652240D535C00F99C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9645650240D535C00F99C64 /* LaunchScreen.storyboard */; };
-		D9645668240D535C00F99C64 /* CVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645667240D535C00F99C64 /* CVUITests.swift */; };
 		D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964567B240D9D0900F99C64 /* CVListViewController.swift */; };
 		D964567E240D9D6900F99C64 /* CVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D964567D240D9D6900F99C64 /* CVListViewModel.swift */; };
 		D9645681240E5D0C00F99C64 /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9645680240E5D0C00F99C64 /* CV.swift */; };
@@ -45,6 +44,8 @@
 		D969F163241062C800F42375 /* ExampleTraining.json in Resources */ = {isa = PBXBuildFile; fileRef = D969F161241062C800F42375 /* ExampleTraining.json */; };
 		D969F165241062F000F42375 /* Training+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F164241062F000F42375 /* Training+Tests.swift */; };
 		D969F1672410634800F42375 /* TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F1662410634800F42375 /* TrainingTests.swift */; };
+		D969F16A2410F2D000F42375 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D969F16C2410F2D000F42375 /* Localizable.strings */; };
+		D969F16E2410F35300F42375 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969F16D2410F35300F42375 /* String+Localized.swift */; };
 		D98697D024100C6F00C58956 /* CVAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697CF24100C6F00C58956 /* CVAPITests.swift */; };
 		D98697D124100D0C00C58956 /* LocalCVList.json in Resources */ = {isa = PBXBuildFile; fileRef = D9645698240E839400F99C64 /* LocalCVList.json */; };
 		D98697D32410148400C58956 /* CV+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98697D22410148400C58956 /* CV+Tests.swift */; };
@@ -67,13 +68,6 @@
 			remoteGlobalIDString = D9645641240D535B00F99C64;
 			remoteInfo = CV;
 		};
-		D9645664240D535C00F99C64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D964563A240D535B00F99C64 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9645641240D535B00F99C64;
-			remoteInfo = CV;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -85,9 +79,6 @@
 		D9645653240D535C00F99C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9645658240D535C00F99C64 /* CVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D964565E240D535C00F99C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9645663240D535C00F99C64 /* CVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9645667240D535C00F99C64 /* CVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVUITests.swift; sourceTree = "<group>"; };
-		D9645669240D535C00F99C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D964567B240D9D0900F99C64 /* CVListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewController.swift; sourceTree = "<group>"; };
 		D964567D240D9D6900F99C64 /* CVListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewModel.swift; sourceTree = "<group>"; };
 		D9645680240E5D0C00F99C64 /* CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
@@ -119,6 +110,8 @@
 		D969F161241062C800F42375 /* ExampleTraining.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExampleTraining.json; sourceTree = "<group>"; };
 		D969F164241062F000F42375 /* Training+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Training+Tests.swift"; sourceTree = "<group>"; };
 		D969F1662410634800F42375 /* TrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTests.swift; sourceTree = "<group>"; };
+		D969F16B2410F2D000F42375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D969F16D2410F35300F42375 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		D98697CF24100C6F00C58956 /* CVAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAPITests.swift; sourceTree = "<group>"; };
 		D98697D22410148400C58956 /* CV+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CV+Tests.swift"; sourceTree = "<group>"; };
 		D98697D4241015AC00C58956 /* CVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTests.swift; sourceTree = "<group>"; };
@@ -145,13 +138,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9645660240D535C00F99C64 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -160,7 +146,6 @@
 			children = (
 				D9645644240D535B00F99C64 /* CV */,
 				D964565B240D535C00F99C64 /* CVTests */,
-				D9645666240D535C00F99C64 /* CVUITests */,
 				D9645643240D535B00F99C64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,7 +155,6 @@
 			children = (
 				D9645642240D535B00F99C64 /* CV.app */,
 				D9645658240D535C00F99C64 /* CVTests.xctest */,
-				D9645663240D535C00F99C64 /* CVUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,15 +187,6 @@
 				D969F1662410634800F42375 /* TrainingTests.swift */,
 			);
 			path = CVTests;
-			sourceTree = "<group>";
-		};
-		D9645666240D535C00F99C64 /* CVUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D9645667240D535C00F99C64 /* CVUITests.swift */,
-				D9645669240D535C00F99C64 /* Info.plist */,
-			);
-			path = CVUITests;
 			sourceTree = "<group>";
 		};
 		D9645675240D964400F99C64 /* Views */ = {
@@ -257,6 +232,7 @@
 				D96456AB240FF84400F99C64 /* Date+Extensions.swift */,
 				D96456AD240FFD9C00F99C64 /* UIImageView+Extensions.swift */,
 				D9645698240E839400F99C64 /* LocalCVList.json */,
+				D969F16D2410F35300F42375 /* String+Localized.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -265,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				D964564E240D535C00F99C64 /* Assets.xcassets */,
+				D969F16C2410F2D000F42375 /* Localizable.strings */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -354,24 +331,6 @@
 			productReference = D9645658240D535C00F99C64 /* CVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D9645662240D535C00F99C64 /* CVUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9645672240D535C00F99C64 /* Build configuration list for PBXNativeTarget "CVUITests" */;
-			buildPhases = (
-				D964565F240D535C00F99C64 /* Sources */,
-				D9645660240D535C00F99C64 /* Frameworks */,
-				D9645661240D535C00F99C64 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D9645665240D535C00F99C64 /* PBXTargetDependency */,
-			);
-			name = CVUITests;
-			productName = CVUITests;
-			productReference = D9645663240D535C00F99C64 /* CVUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -386,10 +345,6 @@
 						CreatedOnToolsVersion = 11.0;
 					};
 					D9645657240D535C00F99C64 = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = D9645641240D535B00F99C64;
-					};
-					D9645662240D535C00F99C64 = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = D9645641240D535B00F99C64;
 					};
@@ -410,7 +365,6 @@
 			targets = (
 				D9645641240D535B00F99C64 /* CV */,
 				D9645657240D535C00F99C64 /* CVTests */,
-				D9645662240D535C00F99C64 /* CVUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -424,6 +378,7 @@
 				D9645699240E839400F99C64 /* LocalCVList.json in Resources */,
 				D9645652240D535C00F99C64 /* LaunchScreen.storyboard in Resources */,
 				D964564F240D535C00F99C64 /* Assets.xcassets in Resources */,
+				D969F16A2410F2D000F42375 /* Localizable.strings in Resources */,
 				D969F162241062C800F42375 /* ExampleTraining.json in Resources */,
 				D98697D924101A5300C58956 /* CVOnlyPerson.json in Resources */,
 				D964564D240D535B00F99C64 /* Main.storyboard in Resources */,
@@ -440,13 +395,6 @@
 				D98697D124100D0C00C58956 /* LocalCVList.json in Resources */,
 				D969F15B241060D500F42375 /* ExampleCourse.json in Resources */,
 				D969F163241062C800F42375 /* ExampleTraining.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9645661240D535C00F99C64 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +419,7 @@
 				D96456AC240FF84400F99C64 /* Date+Extensions.swift in Sources */,
 				D964567C240D9D0900F99C64 /* CVListViewController.swift in Sources */,
 				D96456AA240FBFEC00F99C64 /* CellDisplayableViewModel.swift in Sources */,
+				D969F16E2410F35300F42375 /* String+Localized.swift in Sources */,
 				D9645683240E5D5600F99C64 /* WorkEntry.swift in Sources */,
 				D9645685240E5D6F00F99C64 /* Person.swift in Sources */,
 				D9645681240E5D0C00F99C64 /* CV.swift in Sources */,
@@ -503,14 +452,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D964565F240D535C00F99C64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9645668240D535C00F99C64 /* CVUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -518,11 +459,6 @@
 			isa = PBXTargetDependency;
 			target = D9645641240D535B00F99C64 /* CV */;
 			targetProxy = D9645659240D535C00F99C64 /* PBXContainerItemProxy */;
-		};
-		D9645665240D535C00F99C64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D9645641240D535B00F99C64 /* CV */;
-			targetProxy = D9645664240D535C00F99C64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,6 +477,14 @@
 				D9645651240D535C00F99C64 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D969F16C2410F2D000F42375 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D969F16B2410F2D000F42375 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -736,44 +680,6 @@
 			};
 			name = Release;
 		};
-		D9645673240D535C00F99C64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CVUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.reinstein.CVUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CV;
-			};
-			name = Debug;
-		};
-		D9645674240D535C00F99C64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CVUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.reinstein.CVUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CV;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -800,15 +706,6 @@
 			buildConfigurations = (
 				D9645670240D535C00F99C64 /* Debug */,
 				D9645671240D535C00F99C64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D9645672240D535C00F99C64 /* Build configuration list for PBXNativeTarget "CVUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9645673240D535C00F99C64 /* Debug */,
-				D9645674240D535C00F99C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
