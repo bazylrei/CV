@@ -1,4 +1,6 @@
-"Previous positions" = "Previous positions";
-"Completed courses" = "Completed courses";
-"Trainings" = "Trainings";
-"Skills" = "Skills";
+"CVListViewModel.title" = "CV list";
+
+"CVDetailsViewModel.workEntries" = "Previous positions";
+"CVDetailsViewModel.courses" = "Completed courses";
+"CVDetailsViewModel.trainings" = "Trainings";
+"CVDetailsViewModel.skills" = "Skills";

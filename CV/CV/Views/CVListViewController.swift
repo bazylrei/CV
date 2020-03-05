@@ -8,6 +8,8 @@ class CVListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = viewModel.title
         tableView.delegate = self
         tableView.dataSource = self
         viewModel.fetchCVList { [weak self] in

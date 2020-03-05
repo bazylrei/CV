@@ -1,6 +1,7 @@
 import UIKit
 
 protocol CVListViewModelType {
+    var title: String { get }
     func fetchCVList(completion: @escaping (() -> Void))
     var numberOfRows: Int { get }
     func cv(at index: Int) -> CV
@@ -13,6 +14,10 @@ class CVListViewModel: CVListViewModelType {
     private let appRouter: AppRouterType
     private var cvList = [CV]()
     
+    var title: String {
+        return "CVListViewModel.title".localized
+    }
+
     init(api: CVAPIType = CVAPI(), appRouter: AppRouterType = AppRouter()) {
         self.api = api
         self.appRouter = appRouter
@@ -24,7 +29,7 @@ class CVListViewModel: CVListViewModelType {
             completion()
         }
     }
-    
+        
     var numberOfRows: Int {
         return cvList.count
     }
